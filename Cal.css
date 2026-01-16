@@ -1,0 +1,140 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body Styling - FOREST NIGHT */
+body {
+    background: linear-gradient(135deg, #ffecd2, #fcb69f, #a1c4fd, #c2e9fb);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+
+
+
+
+
+/* Calculator Container */
+/* Calculator Container */
+#calculator {
+    background: linear-gradient(135deg, #000428, #004e92);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    width: 340px;
+    padding: 20px;
+    color: #e6e6e6;
+}
+
+/* Calculator Title */
+#calculator h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+/* Display */
+#box {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 2rem;
+    text-align: right;
+    margin-bottom: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    color: #fff;
+}
+
+#last_operation_history {
+    text-align: right;
+    color: #aaa;
+    font-size: 0.9rem;
+    height: 18px;
+    margin-bottom: 5px;
+}
+
+/* Table Layout */
+#table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#table td {
+    padding: 5px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Operator Buttons */
+.operator {
+    background: rgba(255, 140, 0, 0.8);
+    color: #fff;
+}
+
+.operator:hover {
+    background: rgba(255, 140, 0, 1);
+}
+
+/* Equal Button */
+#equal_sign {
+    background: #ff4500;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.25s ease;
+}
+
+#equal_sign:hover {
+    background: #ff6a33;
+    transform: scale(1.05);
+}
+
+/* Backspace Icon */
+#backspace_btn::before {
+    content: "⌫";
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 400px) {
+    #calculator {
+        width: 90%;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px 0;
+    }
+
+    #box {
+        font-size: 1.5rem;
+    }
+}
